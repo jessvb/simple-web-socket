@@ -1,6 +1,9 @@
 # simple-web-socket
 A simple websocket connection using Node.js. This websocket sends text from JavaScript in an HTML webpage to a Node.js server.
 
+## sessions branch
+The sessions branch sets and gets session data.
+
 ## usage
 To set up the websocket, first open a terminal in the `server-side` directory and install the required packages:
 ```bash
