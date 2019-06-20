@@ -2,7 +2,7 @@
 A simple websocket connection using Node.js. This websocket sends text from JavaScript in an HTML webpage to a Node.js server.
 
 ## sessions branch
-The sessions branch sets and gets session data.
+The sessions branch enables setting and getting session data through buttons on `otherPage.html` (and getting on `index.html`). When the `send` button is pressed (on either page), it sends the stored session data to the server using websockets.
 
 ## usage
 To set up the websocket, first open a terminal in the `server-side` directory and install the required packages:

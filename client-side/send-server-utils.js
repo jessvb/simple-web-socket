@@ -1,16 +1,10 @@
 /* --- utils for sending text to the server --- */
 var url = 'ws://localhost:8080';
 
-function sendText() {
+function sendText(text) {
     var socket = new WebSocket(url);
     socket.onopen = function (event) {
-        socket.send("hello world");
+        socket.send(text);
         socket.close();
     };
 }
-
-/* -------------- Once the page has loaded -------------- */
-document.addEventListener('DOMContentLoaded', function () {
-    var send_btn = document.getElementById('send_btn');
-    send_btn.addEventListener('click', sendText);
-});
